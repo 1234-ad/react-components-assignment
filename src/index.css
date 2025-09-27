@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: system-ui, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .input-field {
+    @apply transition-all duration-200 ease-in-out;
+  }
+  
+  .input-field:focus-within {
+    @apply ring-2 ring-primary-500 ring-opacity-50;
+  }
+  
+  .data-table {
+    @apply w-full border-collapse;
+  }
+  
+  .data-table th,
+  .data-table td {
+    @apply text-left;
+  }
+}
